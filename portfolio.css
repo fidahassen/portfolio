@@ -1,11 +1,9 @@
-/* {
-    box-sizing: border-box;
-    margin: 0px;
-} */
 body{
     margin:0px;
     font-family:Arial, Helvetica, sans-serif;
 }
+
+/* <navbar> */
 .navbar{
     width:100%;
     height: 100px;
@@ -13,35 +11,39 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+.title{
+    width: 20%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: wheat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.title:hover{
+    color: black;
+}
 .navbar-items{
     width:40%;
     height: 100%;
     font-size: 20px;
+    font-weight: bolder;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .navbar-items a{
     text-decoration:none;
-    color: #C8B7A6;
+    color: black;
 }
-.navbar-items a:hover{
-    color:whitesmoke;
-}
-.title:hover{
-    color: whitesmoke;
-}
-.title{
-    width: 20%;
-    height: 100%;
-    font-size: 30px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: #C8B7A6;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
+.navbar-items a:hover{ 
+    color: wheat; 
+} 
+ /* <navbar ends here> */
+
+ /* <home> */
 #home{
     width: 100%;
     height: 100vh;
@@ -52,25 +54,6 @@ body{
 .home-left{
     width: 50%;
     height: 400px;
-    /* display: flex;  */
-    
-}
-.home-left i{
-    font-size: 40px;
-    color:#6e423c;
-}
-.home-right{
-    width: 50%; 
-    height:200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img{
-    position: relative;
-    top: 240px;
-    left: 80px;
-    border-radius:5%;
 }
 .head-one{
     font-size: 40px;
@@ -83,14 +66,6 @@ body{
 .head-color{
     color:#6e423c;
 }
-.home-para{
-    font-size: 20px;
-    color: #6e423c;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* padding-left: 257px; */
-    position: relative;
-    top: 150px;
-}
 .h1{
     display: flex;
     justify-content: center;
@@ -98,6 +73,36 @@ body{
 .para{
     display: flex;
     justify-content: center;
+}
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.home-para{
+    color: #6e423c;
+    position: relative;
+    top: 150px;
+}
+.home-left i{
+    font-size: 40px;
+    color:#6e423c;
+}
+.home-right{
+    width: 50%; 
+    /* height:200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    position: relative;
+    top: -45px;
+    left: 80px;
+    border-radius:5%;
+}
+.img:hover{
+    transform: scale(1.03);
+    transition:0.5s;
 }
 .social-media{
     display: flex;
@@ -119,18 +124,20 @@ body{
     align-items: center;
     font-size:xx-large;
     color:#6e423c;
-    
 }
 .icon-container:hover{
     background-color: #6e423c;
-    transform: scale(1.1);
-    transition: 0.5s;
-
+    transform: scale(1.2);
+    transition: 0.8s;
 }
 .icon-container i:hover{
-    color:whitesmoke;
+    color:wheat;
 }
+/* <home ends here> */
+
+/* <about> */
 #about{
+    margin-top: -100px;
     width: 100%;
     height: 100vh;
     background-color:wheat;
@@ -140,23 +147,20 @@ body{
 }
 .about-head{
     font-size: 65px;
-    font-weight: bolder;
+    font-weight: bold;
     color:black;
     position: relative;
     bottom:5px;
     right: 50px;
 }
 .about-para{
-    font-size: 20px;
     color:#6e423c;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
-
 /* about ends here */
 
-#project{
-    /* padding-top: 100px; 
-    margin-top: -100px; */
+/* <skill> */
+#skill{
+    margin-top: -100px; 
     width: 100%;
     height: 100vh;
     background-color:wheat;
@@ -165,45 +169,100 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
+.skill-head{
+    font-size: 65px;
+    font-weight: bold;
+    color:black;
+}
+.skill-container{
+    width: 65%;
+    height: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skill-sub:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.skill-sub{
+    height: 95%;
+    width: 28%;
+    background-color: #6e423c;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skill-sub i{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+.skill-icon-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill-para{
+    position: relative;
+    bottom: 15px;
+}
+/* <skill ends here> */
+
+/* <project> */
+#project{
+    width: 100%;
+    height: 100vh;
+    background-color:wheat;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    align-items: center; 
+}
 .project-head{
     font-size: 60px;
     font-weight:bold;
     color: black;
 }
 .project-container{
-    width: 50%;
-    height: 50%;
+    width: 65%;
+    height: 65%;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
 }
 .project-sub{
-    height: 75%;
-    width:25%;
+    height: 95%;
+    width:28%;
     background-color: #6e423c;
-    border: 5px solid black;
-    border-radius: 50px;
-    padding: 25px;
+    border-radius: 35px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+.project-sub:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 .project-sub a{
     font-size: 30px;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
     color: black;
 }
 .project-sub a:hover{
-    color: whitesmoke;
+    color: wheat;
     transition: 0.5s;
 }
-/* .pcontainerone{
-    display: flex;
-    justify-content: space-around;
-} */
+/* <project ends here> */
 
+/* <contact> */
 #contact{
     width: 100%;
     height: 100vh;
@@ -213,11 +272,11 @@ body{
     justify-content: center;
 }
 .contact-head{
-    font-size: 65px;
+    font-size: 60px;
     font-weight: bolder;
     color:black;
     position: relative;
-    bottom:5px;
+    bottom: 30px;
     right: 50px;
 }
 .contact-form{
@@ -239,7 +298,7 @@ body{
     font-size: 18px;
 }
 #send{
-        width: 200px;
+        width: 150px;
         height: 45px;
         background-color:  #6e423c;
         border-radius: 25px;
@@ -247,8 +306,9 @@ body{
         font-size: 20px;
         font-weight: bold;
         cursor: pointer;
-        transition: transform 0.5s;
 }
 #send:hover{
     transform: scale(1.1);
+    transition: 0.5s;
 }
+/* <contact ends here> */
